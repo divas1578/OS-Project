@@ -26,7 +26,7 @@ int main()
       rt[count]=0; 
       flag=1; 
     } 
-    else if(rt[count]>0) 
+    else if(rt[count]>=0) 
     { 
       rt[count]-=time_quantum; 
       time+=time_quantum; 
@@ -42,7 +42,7 @@ int main()
     if(count==n-1) 
       count=0; 
     else if(at[count+1]<=time) 
-      count--; 
+      count++; 
     else 
       count=0; 
   } 
