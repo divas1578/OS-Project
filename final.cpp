@@ -42,7 +42,7 @@ int main()
     if(count==n-1) 
       count=0; 
     else if(at[count+1]<=time) 
-      count++; 
+      count--; 
     else 
       count=0; 
   } 
