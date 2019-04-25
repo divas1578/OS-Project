@@ -10,8 +10,9 @@ int main()
   remain=n; 
   for(count=0;count<n;count++) 
   { 
-    printf("Enter Arrival Time and Burst Time for Process Process Number %d :",count+1); 
+    printf("Enter Arrival Time Of Process Number %d :",count+1); 
     scanf("%d",&at[count]); 
+    printf("Enter Burst Time Of Process Process Number %d :",count+1); 
     scanf("%d",&bt[count]); 
     rt[count]=bt[count]; 
   } 
@@ -26,7 +27,7 @@ int main()
       rt[count]=0; 
       flag=1; 
     } 
-    else if(rt[count]>=0) 
+    else if(rt[count]>0) 
     { 
       rt[count]-=time_quantum; 
       time+=time_quantum; 
